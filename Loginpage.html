@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #053969; 
+        }
+
+        h1 {
+            color: rgb(186, 164, 164); 
+        }
+
+        .container {
+            background-image: url('Screenshot 2024-05-29 123857.png'); /* Replace with your image URL */
+            background-size: cover; /* Ensure the image covers the container */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            padding: 50px; /* Add padding to make the container larger */
+            border-radius: 15px; /* Optional: round the corners */
+            
+        }
+
+
+.form-text, .form-label {
+    color: rgb(186, 164, 164); /* Change the color of form helper text and labels to white */
+}
+
+.btn-link {
+    color: #FFFFFF; /* Change the color of the link to white */
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center">LOGIN PAGE</h1>
+        <form class="row g-3" action="AboutUs.html">
+        <div class="col-7">
+          <label for="emailaddress" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="emailaddress" placeholder="name@example.com" aria-describedby="emailHelp">
+         
+        </div>
+        <div class="col-7">
+          <label for="Password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="Password" placeholder="Password">
+          <div id="passwordHelpBlock" class="form-text">
+            <p>Password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters.</p>
+        </div>
+        </div>
+        <div class="col-12">
+       <a href="form.html" class="btn btn-link">Do Not Have an Account? Sign In</a>
+    </div>
+       <div class="col-12">
+          
+       <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>  
+<script>
+    // Load the top navbar
+    fetch('brand.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('top-navbar').innerHTML = data;
+        });
+
+    // Load the bottom navbar
+    fetch('brand.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('bottom-navbar').innerHTML = data;
+        });
+</script>
+
+</body>
+</html>

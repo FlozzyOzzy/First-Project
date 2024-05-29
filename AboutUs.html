@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1b2b3a;  
+        }
+
+        h1 {
+            color: rgb(186, 164, 164); 
+        }
+
+        .container {
+            background-image: url('Screenshot 2024-05-29 123857.png'); /* Replace with your image URL */
+            background-size: cover; /* Ensure the image covers the container */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            padding: 50px; /* Add padding to make the container larger */
+            border-radius: 15px; /* Optional: round the corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+        }
+    
+    </style>
+</head>
+<body>
+
+
+    <div class="container container-fluid">
+        <h1 class="text-center">ABOUT US</h1>
+       
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>  
+<script>
+    // Load the top navbar
+    fetch('brand.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('top-navbar').innerHTML = data;
+        });
+
+    // Load the bottom navbar
+    fetch('brand.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('bottom-navbar').innerHTML = data;
+        });
+</script>
+
+</body>
+</html>
+
+    </style>
+</head>
+<body>
